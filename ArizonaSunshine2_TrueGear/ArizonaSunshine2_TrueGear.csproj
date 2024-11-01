@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>ArizonaSunshine2_TrueGear</AssemblyName>
+    <Product>TrueGear Mod For ArinzonaSunshine2</Product>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>ArizonaSunshine2_TrueGear</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>libs\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Client">
+      <HintPath>libs\Client-nstrip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppClient">
+      <HintPath>libs\Il2CppClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>libs\Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SerializableTO">
+      <HintPath>libs\SerializableTO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Shared">
+      <HintPath>libs\Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TrueGearSDK">
+      <HintPath>libs\TrueGearSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>libs\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Vertigo.Core">
+      <HintPath>libs\Vertigo.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Vertigo.Haptics">
+      <HintPath>libs\Vertigo.Haptics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Vertigo.Input">
+      <HintPath>libs\Vertigo.Input.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Vertigo.Utility">
+      <HintPath>libs\Vertigo.Utility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Vertigo.VR">
+      <HintPath>libs\Vertigo.VR.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
